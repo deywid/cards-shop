@@ -40,15 +40,25 @@
 /* HOME */
 
 .category-item {
-  height: 32px;
+  height: 42px;
   width: 100%;
-  padding: 12px;
-  margin: 8px;
+  padding: 12px 24px;
+  margin: 6px;
   background-color: #304E74;
   border-radius: 4px;
 
-  font-size: 1.4em;
+  display: flex;
+  align-items: center;
+
+  font-size: 1.2em;
   color: floralwhite;
+}
+
+.category-item-name {
+  color: floralwhite;
+  font-size: .9em;
+
+  text-decoration: none;
 }
 
 /* MENU */
@@ -80,9 +90,5 @@
   color: floralwhite;
   font-size: 1.2em;
 
-  text-decoration: none;
-}
-
-Link {
   text-decoration: none;
 }

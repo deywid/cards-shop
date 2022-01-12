@@ -26,7 +26,7 @@ function Home() {
           <div 
           className="category-item"
           key={type}>
-            <Link to={`/cards/${type}`}>{type}</Link>
+            <Link to={`/cards/${type}`} className="category-item-name">{type}</Link>
           </div>)
         }
       </div>

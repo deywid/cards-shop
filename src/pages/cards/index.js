@@ -1,12 +1,15 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import Card from '../../components/Cards/cards';
 
 import { useParams } from 'react-router-dom'
+import { CartContext } from '../../contexts/cart';
 
 function Cards() {
 
   const params = useParams();
-  
+
+  const { addItem } = useContext(CartContext)
+
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
@@ -23,16 +26,21 @@ function Cards() {
 
   return (
     <>
-    <h1>Total de cards: {cards.length}</h1>
+      <h1>Total de cards: {cards.length}</h1>
       <div className='container'>
         {
           cards.map((card) => (
-            <Card 
-              name={card.name}
-              image={card.card_images[0].image_url_small}
-              type={card.type}
-              key={card.id}
-            />
+            <div key={card.id}>
+              <Card
+                name={card.name}
+                image={card.card_images[0].image_url_small}
+                type={card.type}
+                key={card.id}
+              />
+              <button
+                onClick={() =>
+                  addItem(card)}>Adcionar</button>
+            </div>
           ))
         }
       </div>

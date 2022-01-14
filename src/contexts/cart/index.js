@@ -15,7 +15,7 @@ export function CartProvider({ children }) {
     }
 
     setCart([...cart, newCard])
-    localStorage.setItem('cart', JSON.stringify([...cart, card]))
+    localStorage.setItem('cart', JSON.stringify([...cart, newCard]))
   }
 
 

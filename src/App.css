@@ -13,24 +13,43 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid #CCC;
-  width: 150px;
-  height: 300px;
+
+  background-color: floralwhite;
+  border: 1px solid #304E74;
+  width: 170px;
+  height: 350px;
 }
 
 .item-card-photo {
-  width: 150px;
+  width: 100%;
 }
 
 .item-card-name {
+  max-height: 50px;
+  overflow: hidden;
+
   text-align: center;
+  font-size: .9em;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .item-card-type {
   text-align: center;
-  background-color: #ccc;
+  color: floralwhite;
+  font-size: .9em;
+
+  background-color: #304E74;
+  overflow: hidden;
 }
 
+.item-card-buttons {
+  padding: 0 12px;
+
+  text-align: right;
+  color: #EC6D06;
+  font-size: 1.3em;
+}
 
 .container-app {
  width: 70%;
@@ -97,19 +116,21 @@
 
 .table-cart {
   width: 100%;
-  background: #FFF;
+  background: #fff;
   padding: 16px;
 
   font-weight: 600;
 }
 
 .table-cart thead, th {
-  color: #999;
+  color: #304E74;
   text-align: left;
+  
+  border-bottom: 1px solid #304E74;
 }
 
-.table-cart tbody, th {
-  border-bottom: 1px solid #eee;
+.table-cart tbody, td {
+  text-transform: uppercase;
 }
 
 .table-image {

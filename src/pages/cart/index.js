@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { MdDelete } from "react-icons/md";
 import { CartContext } from '../../contexts/cart'
+import { Table, THead, TImage } from "./styles";
 
 function Cart() {
 
@@ -8,23 +9,22 @@ function Cart() {
 
   return (
     <>
-      <table className="table-cart">
+      <Table>
         <thead>
           <tr>
-            <th>Item</th>
-            <th>Nome</th>
-            <th>Preço</th>
-            <th>Remover</th>
+            <THead>Item</THead>
+            <THead>Nome</THead>
+            <THead>Preço</THead>
+            <THead>Remover</THead>
           </tr>
         </thead>
         <tbody>
           {cart.map(item =>
             <tr key={item.idCard}>
               <td>
-                <img
+                <TImage
                   src={item.card_images[0].image_url_small}
-                  className="table-image"
-                  alt="card image"
+                  alt="card preview"
                 />
               </td>
               <td>{item.name}</td>
@@ -44,7 +44,7 @@ function Cart() {
             </tr>
           )}
         </tbody>
-      </table>
+      </Table>
     </>
   )
 }

@@ -51,35 +51,6 @@
   font-size: 1.3em;
 }
 
-.container-app {
- width: 70%;
- margin: 0 auto;
-}
-
-/* HOME */
-
-.category-item {
-  height: 42px;
-  width: 100%;
-  padding: 12px 24px;
-  margin: 6px;
-  background-color: #304E74;
-  border-radius: 4px;
-
-  display: flex;
-  align-items: center;
-
-  font-size: 1.2em;
-  color: floralwhite;
-}
-
-.category-item-name {
-  color: floralwhite;
-  font-size: .9em;
-
-  text-decoration: none;
-}
-
 /* MENU */
 
 .menu {
@@ -113,21 +84,6 @@
 }
 
 /* CART */
-
-.table-cart {
-  width: 100%;
-  background: #fff;
-  padding: 16px;
-
-  font-weight: 600;
-}
-
-.table-cart thead, th {
-  color: #304E74;
-  text-align: left;
-  
-  border-bottom: 1px solid #304E74;
-}
 
 .table-cart tbody, td {
   text-transform: uppercase;

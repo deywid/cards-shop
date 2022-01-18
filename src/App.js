@@ -8,6 +8,7 @@ import Menu from './components/menu';
 
 import { Routes, Route } from 'react-router-dom'
 import { CartProvider } from './contexts/cart';
+import Checkout from './pages/checkout';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <Route path="/cards/:category" element={<Cards />} />
       <Route path="/cart" element={<Cart />} />
       <Route path="/about" element={<About />} />
+      <Route path="/checkout" element={<Checkout />} />
     </Routes>
     </CartProvider>
     </>

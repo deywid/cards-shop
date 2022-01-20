@@ -14,16 +14,16 @@ function App() {
 
   return (
     <>
-    <CartProvider>
-    <Menu />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/cards/:category" element={<Cards />} />
-      <Route path="/cart" element={<Cart />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/checkout" element={<Checkout />} />
-    </Routes>
-    </CartProvider>
+      <CartProvider>
+        <Menu />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/cards/:category" element={<Cards />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/checkout" element={<Checkout />} />
+        </Routes>
+      </CartProvider>
     </>
   )
 }

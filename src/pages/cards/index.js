@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Card from '../../components/Cards/cards';
+import Card from '../../components/cards/cards';
 
 import { useParams } from 'react-router-dom'
 
@@ -16,6 +16,7 @@ function Cards() {
       setCards([...cards, ...data])
     }
     handleGetCard();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [params.category, currentPage])
 
   useEffect(() => {

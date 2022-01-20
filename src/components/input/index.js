@@ -1,17 +1,23 @@
 import React from "react";
 
-function Input({label, ...props}) {
+import {
+  ContainerInput,
+  DescriptionInput,
+  InputText,
+  ErrorMessage
+} from './styles'
 
-
+function Input({ label, errorMessage, ...props }) {
 
   return (
-    <>
-    <label>{label}</label>
-    <input 
-      {...props}
-    />
-    </>
+    <ContainerInput>
+      <DescriptionInput>{label}</DescriptionInput>
+      <InputText
+        {...props}
+      />
+      <ErrorMessage>{errorMessage}</ErrorMessage>
+    </ContainerInput>
   )
 }
 
-export default Input
+export default Input;
